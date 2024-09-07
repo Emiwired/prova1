@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce di Alimenti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>E-commerce di Alimenti</h1>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Prodotti</a>
+            <a href="#">Carrello</a>
+        </nav>
+        <div class="cart">
+            <span id="cart-count">0</span> prodotti nel carrello
+        </div>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>I Nostri Prodotti</h2>
+            <div class="product-container">
+                <!-- Prodotto 1 -->
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Pasta">
+                    <h3>Pasta Italiana</h3>
+                    <p>€ 2.99</p>
+                    <button class="add-to-cart" data-name="Pasta Italiana" data-price="2.99">Aggiungi al Carrello</button>
+                </div>
+
+                <!-- Prodotto 2 -->
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Olio d'Oliva">
+                    <h3>Olio d'Oliva</h3>
+                    <p>€ 7.50</p>
+                    <button class="add-to-cart" data-name="Olio d'Oliva" data-price="7.50">Aggiungi al Carrello</button>
+                </div>
+
+                <!-- Prodotto 3 -->
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Pomodori Secchi">
+                    <h3>Pomodori Secchi</h3>
+                    <p>€ 4.25</p>
+                    <button class="add-to-cart" data-name="Pomodori Secchi" data-price="4.25">Aggiungi al Carrello</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart-summary">
+            <h2>Riepilogo del Carrello</h2>
+            <div id="cart-items"></div>
+            <p id="total-price">Totale: € 0.00</p>
+            <button id="checkout">Procedi al Pagamento</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2024 E-commerce di Alimenti</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
